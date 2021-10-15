@@ -1,0 +1,348 @@
+/* ------ for the page overall ------ */
+img {   
+    height: auto;
+    max-width: 100%;
+}
+
+p {
+    color: black; 
+    font-family: 'Helvetica Neue', sans-serif; 
+    font-size: 18px; 
+    line-height: 24px; 
+    margin: 0 0 24px; 
+    text-align: justify; 
+    text-justify: center;
+}
+
+/* ------ TOP DIV ------ */
+.intro-photo {
+    width: 100%;
+    box-shadow: 3px 3px lightgray;
+}
+
+/* ------ SECTION SEPARATOR ------ */
+h3 {
+    margin-top: 50px;
+    margin-bottom: 40px;
+    
+    line-height: 32px; 
+    font-family: 'Open Sans', sans-serif; 
+    color: #111; 
+    text-shadow: 1px 1px 1px #f403d1;
+
+    font-size: 40px; 
+    font-weight: 300; 
+    text-align: center; 
+}
+
+.hr-index {
+    display: block;
+    height: 1px;
+    width: 15%;
+    border: 0;
+    border-radius: 3em;
+    border-top: 4px solid #f403d1;
+    margin: 1em 0;
+    padding: 0;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 42.5%;
+}
+
+/* ------ BODY ------ */
+/* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 50%;
+    padding-top: 20px;
+}
+  
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#preping {
+    width: 100%;
+    text-align: left;
+}
+
+/* ------ WRITING ------ */
+h4 {
+    width: 100%; 
+    font-size: 25px;
+    text-align: center; 
+    border-bottom: 1px solid black; 
+    line-height: 0.1em;
+    margin: 10px 0 20px; 
+} 
+ 
+h4 span { 
+    background:#fff; 
+    padding:0 10px; 
+}
+
+/* ------ BUTTONS ------ */
+/* buttons "GO TO PAGE" */
+.button {
+    display: inline-block;
+    text-decoration: none;
+    position: relative;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.button .bottom {
+    position: absolute;
+    left: 7px;
+    top: 7px;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(-45deg,#f403d1,#64b5f6);
+    display: block;
+    -webkit-transition: all .15s ease-out;
+    -moz-transition: all .15s ease-out;
+    -o-transition: all .15s ease-out;
+    transition: all .15s ease-out;
+}
+
+.button .top {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: 24px 34px 22px 34px;
+    border: 2px solid #64b5f6;
+}
+
+.button-dark .top {
+    border: 2px solid white;
+}
+
+.button .top .label {
+    font-family: sans-serif;
+    font-weight: 600;
+    color: white;
+    font-size: 12px;
+    line-height: 110%;
+    letter-spacing: 2px;
+    text-align: center;
+    text-transform: uppercase;
+    -webkit-transition: all .15s ease-out;
+    -moz-transition: all .15s ease-out;
+    -o-transition: all .15s ease-out;
+    transition: all .15s ease-out;
+}
+
+.button-dark .top .label {
+    color: #fff;
+}
+
+.button:hover .bottom {
+    left: 0;
+    top: 0;
+    background-color: white;
+}
+
+.button:hover .top .label {
+    color: white;
+}
+
+.button-border {
+    position: absolute;
+    background-color: #f403d1;
+    -webkit-transition: all .25s ease-out;
+    -moz-transition: all .25s ease-out;
+    -o-transition: all .25s ease-out;
+    transition: all .25s ease-out;
+}
+
+.button:hover .top .button-border-left,.button:hover .top .button-border-right {
+    height: calc(100% + 2px);
+}
+
+.button:hover .top .button-border-top,.button:hover .top .button-border-bottom {
+    width: calc(100% + 2px);
+}
+
+.button-border-left {
+    left: -2px;
+    bottom: -2px;
+    width: 2px;
+    height: 0;
+}
+
+.button-border-top {
+    left: -2px;
+    top: -2px;
+    width: 0;
+    height: 2px;
+}
+
+.button-border-right {
+    right: -2px;
+    top: -2px;
+    width: 2px;
+    height: 0;
+}
+
+.button-border-bottom {
+    right: -2px;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+}
+
+/* ------ social media buttons ------ */
+.fa-index {
+    padding-top: 10px;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-bottom: 10px;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin-left: 15px;
+
+    background: #bc2fcc;
+    color: white;
+    height: 80px;
+    width: 80px;
+    border-radius: 5px;
+}
+  
+.fa-index:hover {
+    background: white;
+    color: #bc2fcc;
+}
+  
+.fa-index-facebook {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* ------ article divisions ------ */
+/* each article's presentation */
+.box {
+    width: 600px;
+    height: 580px;
+
+    margin-bottom: 10px;
+    margin-left: 60px;
+
+    border-width: 1px;
+    border-style: solid;
+    border-collapse: collapse;
+    border-color: black;
+
+    box-shadow: 2px 2px lightgray;
+}
+
+.box .image.fit {
+    margin: 0;
+    border-radius: 0;
+    max-width: 100%;
+}
+
+.box .image.fit img {
+    border-radius: 0;
+}
+
+.box .content {
+    padding: 3rem;
+}
+
+/* ------ images in box ------ */
+.image {
+    border: 0;
+    display: inline-block;
+    position: relative;
+}
+
+.image img {
+    display: block;
+}
+
+.image.left, .image.right {
+    max-width: 40%;
+}
+
+.image.left img, .image.right img {
+    width: 100%;
+}
+
+.image.fit {
+    display: block;
+    margin: 0 0 2rem 0;
+    width: 100%;
+}
+
+.image.fit img {
+    width: 100%;
+}
+
+.image.main {
+    display: block;
+    margin: 0 0 3rem 0;
+    width: 100%;
+}
+
+.image.main img {
+    width: 100%;
+}
+
+/* ------ MEDIA QUERIES ------ */
+@media screen and (max-width: 600px) {
+    .intro-photo {
+        width: 100%;
+        margin: auto;
+    }
+    .column {
+        width: 100%;
+    }
+
+    .box {
+        width: 100%;
+        margin: auto;
+    }
+
+    .fa-index {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-right: 15px;
+        padding-left: 15px;
+        font-size: 26px;
+        text-align: center;
+        text-decoration: none;
+    
+        background: #bc2fcc;
+        color: white;
+        height: 60px;
+        width: 60px;
+        border-radius: 5px;
+
+        line-height: 3em;
+    }
+      
+    .fa-index-facebook {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .column {
+        width: 100%;
+    }
+
+    .box {
+        width: 100%;
+        max-width: 600px;
+        margin: auto;
+    }
+
+}
